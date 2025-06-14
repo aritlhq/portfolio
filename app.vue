@@ -1,5 +1,5 @@
 <script setup>
-import {NConfigProvider, darkTheme} from 'naive-ui'
+import {NConfigProvider, NDialogProvider, darkTheme} from 'naive-ui'
 import "@fontsource/montserrat/index.css"
 
 

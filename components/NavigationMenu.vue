@@ -1,7 +1,8 @@
 <script setup>
 import {GridOutline, InvertModeOutline} from '@vicons/ionicons5'
-import personalData from "~/assets/data/personal.json"
+import personalData from "assets/data/personal-data.json"
 import {ref} from 'vue'
+import Development from "assets/icones/Development.vue";
 
 const showDrawer = ref(false)
 
@@ -26,8 +27,10 @@ const navItems = [
     <!-- Navbar -->
     <div class="flex items-center justify-between px-4 py-3 mx-auto">
       <!-- Logo -->
-      <NuxtLink class="color-white no-underline flex items-center space-x-lg" to="/">
-        <NIcon size="40" :component="InvertModeOutline"></NIcon>
+      <NuxtLink class="color-white no-underline flex items-center gap-2" to="/">
+        <NIcon class="text-4xl">
+          <Development/>
+        </NIcon>
         <div class="flex items-center space-x-sm">
           <p class="text-xl font-bold">{{ personalData.data[0]["navbar-title"]}}</p>
         </div>
@@ -47,8 +50,8 @@ const navItems = [
 
       <!-- Hamburger (mobile only) -->
       <div class="md:hidden">
-        <NButton class="py-6" dashed>
-          <NIcon @click="toggleDrawer" color="white" size="25" :component="GridOutline"></NIcon>
+        <NButton @click="toggleDrawer" class="py-6" dashed color="#ffffff57">
+          <NIcon  color="white" size="25" :component="GridOutline"></NIcon>
         </NButton>
       </div>
     </div>

@@ -6,7 +6,9 @@ import Components from 'unplugin-vue-components/vite'
 export default defineNuxtConfig({
     compatibilityDate: '2025-05-15',
     devtools: {enabled: true},
-    ssr: false,
+    nitro:{
+        preset: "cloudflare-pages"
+    },
     build: {
         /**
          * Reference: https://github.com/tusen-ai/naive-ui/issues/6682#issuecomment-2688625916

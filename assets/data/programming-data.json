@@ -11,7 +11,7 @@
           ]
         },
         {
-          "subtitle": "Tech Stacks",
+          "subtitle": "Tech Used",
           "items": [
             "VueJS",
             "NuxtJS",
@@ -27,7 +27,7 @@
             "Prisma",
             "Jest",
             "Joi",
-            "etc ..."
+            "and more ..."
           ]
         }
       ]

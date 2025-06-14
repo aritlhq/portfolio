@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <NAvatar
+        src="https://c4.wallpaperflare.com/wallpaper/749/308/1001/anime-code-wallpaper-preview.jpg"
+        object-fit="cover"
+    >
+    </NAvatar>
+  </div>
+</template>

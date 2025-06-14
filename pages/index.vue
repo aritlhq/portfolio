@@ -2,6 +2,8 @@
 import Educations from "~/components/landing-page/Educations.vue";
 import Programming from "~/components/landing-page/Programming.vue";
 import WelcomeMessage from "~/components/landing-page/WelcomeMessage.vue";
+import Certificates from "~/components/landing-page/Certificates.vue";
+import Avatar from "~/components/landing-page/Avatar.vue";
 
 if (import.meta.server) {
   /**
@@ -32,11 +34,12 @@ useSeoMeta({
     <WelcomeMessage/>
 
     <!--Programming-->
-    <div>
-      <Programming/>
-    </div>
+    <Programming/>
 
     <!--Educations-->
     <Educations/>
+
+    <!--Certificates-->
+    <Certificates/>
   </div>
 </template>

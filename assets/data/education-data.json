@@ -26,6 +26,13 @@
         },
         {
           "type": "success",
+          "title": "Karamel.id – Yogyakarta, Indonesia",
+          "content": "Frontend Web Development Training",
+          "time": "Jul 22 - Aug 22",
+          "line-type": null
+        },
+        {
+          "type": "success",
           "title": "LPK IT Komputer – Jakarta, Indonesia",
           "content": "Photoshop Professional Training",
           "time": "Dec 18 - Jan 19",

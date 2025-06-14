@@ -1,4 +1,8 @@
-<script setup lang="ts">
+<script setup>
+import Educations from "~/components/landing-page/Educations.vue";
+import Programming from "~/components/landing-page/Programming.vue";
+import WelcomeMessage from "~/components/landing-page/WelcomeMessage.vue";
+
 if (import.meta.server) {
   /**
    * Reference: https://nuxt.com/docs/api/composables/use-seo-meta
@@ -11,7 +15,7 @@ if (import.meta.server) {
   })
 }
 
-const dynamicTitle = ref('My title')
+const dynamicTitle = ref('Personal Portfolio')
 /**
  * Reference: https://nuxt.com/docs/api/composables/use-seo-meta
  */
@@ -19,9 +23,20 @@ const dynamicTitle = ref('My title')
 useSeoMeta({
   title: () => dynamicTitle.value,
   ogTitle: () => dynamicTitle.value,
-})
+});
 </script>
 
 <template>
-  <h1>Hello</h1>
+  <div class="py-15">
+    <!--Welcome Message-->
+    <WelcomeMessage/>
+
+    <!--Programming-->
+    <div>
+      <Programming/>
+    </div>
+
+    <!--Educations-->
+    <Educations/>
+  </div>
 </template>

@@ -22,7 +22,7 @@ function openModal(detail) {
   >
     <h2 class="text-xl font-bold mb-4 lg:text-2xl">{{ certificate.title }}</h2>
 
-    <div class="grid grid-cols-2 gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
       <div
           v-for="detail in certificate.data"
           :key="detail.title"
@@ -32,7 +32,7 @@ function openModal(detail) {
           <template #cover>
             <NImage
                 lazy
-                class="h-40 w-full"
+                class="h-50 w-full"
                 object-fit="cover"
                 :src="detail.image"
             />
@@ -44,7 +44,7 @@ function openModal(detail) {
               <a :href="detail.proof" class="text-emerald no-underline">
                 <NButton dashed color="#f3ecd5">
                   <div class="flex gap-2 items-center">
-                    <p class="text-white font-semibold">View Proof</p>
+                    <p class="text-white font-semibold text-md md:text-lg">View Proof</p>
                     <NIcon class="mb-2 text-white">
                       <FileCertificate class="text-lg"/>
                     </NIcon>
@@ -52,7 +52,7 @@ function openModal(detail) {
                 </NButton>
               </a>
 
-              <NButton @click="openModal(detail)" color="#f3ecd5" class="font-semibold">
+              <NButton @click="openModal(detail)" color="#f3ecd5" class="font-semibold text-md md:text-lg">
                 Details
               </NButton>
             </div>

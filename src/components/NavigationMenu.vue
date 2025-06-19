@@ -68,7 +68,7 @@ const navItems = [
           v-if="showDrawer"
           class="absolute w-full min-h-screen bg-[#101014] border-t -z-1 top-0 shadow-md md:hidden"
       >
-        <div class="flex flex-col text-center gap-4 py-60">
+        <div class="flex flex-col text-center gap-4 py-40">
           <RouterLink
               v-for="item in navItems"
               :key="item.to"
@@ -77,7 +77,9 @@ const navItems = [
               class="text-2xl font-bold text-white no-underline py-10"
           >
             <NButton class="text-3xl" text>
-              {{ item.label }}
+              <p class="text-white">
+                {{ item.label }}
+              </p>
             </NButton>
           </RouterLink>
         </div>

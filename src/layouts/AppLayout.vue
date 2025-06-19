@@ -6,10 +6,8 @@ import Footer from "../components/Footer.vue";
 <template>
   <div class="flex justify-between flex-col min-h-screen">
     <NavigationMenu/>
-    <div class="px-4 py-3 md:px-20 lg:px-72">
-      <div>
-        <slot/>
-      </div>
+    <div class="px-4 md:px-20 lg:px-72">
+      <slot/>
     </div>
     <Footer/>
   </div>

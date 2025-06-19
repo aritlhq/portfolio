@@ -24,10 +24,10 @@ import Avatar from "./Avatar.vue";
 
     <div class="mt-6">
       <a :href="`mailto:${ personal.email }`" class="no-underline flex gap-3">
-        <NButton size="large" class="py-6" type="primary" dashed>
+        <NButton size="large" class="py-6" color="#f3ecd5">
           <div class="flex items-center gap-2">
-            <p class="text-lg text-white font-bold">{{ personal['button-1'] }}</p>
-            <NIcon class="text-white pb-2">
+            <p class="text-lg text-black font-bold">{{ personal['button-1'] }}</p>
+            <NIcon class="pb-2">
               <ArrowUpRight class="text-2xl"/>
             </NIcon>
           </div>

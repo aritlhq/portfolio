@@ -31,6 +31,7 @@ function openModal(detail) {
         <NCard :title="detail.title" size="small" class="h-full">
           <template #cover>
             <NImage
+                lazy
                 class="h-40 w-full"
                 object-fit="cover"
                 :src="detail.image"

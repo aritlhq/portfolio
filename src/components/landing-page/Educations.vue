@@ -1,5 +1,6 @@
 <script setup>
 import educationData from "../../assets/data/education-data.json"
+import DotCircleRegular from "../../assets/icones/DotCircleRegular.vue";
 </script>
 
 <template>
@@ -17,7 +18,14 @@ import educationData from "../../assets/data/education-data.json"
           :time="item.time"
           :type="item.type || undefined"
           :line-type="item['line-type'] || undefined"
-      />
+          :color="item.type === 'success' ? '#f3ecd5' : undefined"
+      >
+        <template v-if="item.type ==='success'" #icon>
+          <n-icon>
+            <DotCircleRegular/>
+          </n-icon>
+        </template>
+      </NTimelineItem>
     </NTimeline>
   </div>
 </template>

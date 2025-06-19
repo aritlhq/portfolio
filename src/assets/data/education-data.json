@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "title": "Educations",
+      "data": [
+        {
+          "type": null,
+          "title": "University of Nicosia (Online)",
+          "content": "Mastering Web3 – Non-degree Program (MOOC)",
+          "time": "Feb 25 - Present",
+          "line-type": "dashed"
+        },
+        {
+          "type": null,
+          "title": "Rubin.id – Tangerang, Indonesia",
+          "content": "Participant in Rubin.id Program",
+          "time": "Jan 23 - Present",
+          "line-type": "dashed"
+        },
+        {
+          "type": null,
+          "title": "Universitas Pamulang – Tangerang, Indonesia",
+          "content": "Bachelor of Computer Science, Currently in 5th Semester",
+          "time": "Dec 22 - Present",
+          "line-type": "dashed"
+        },
+        {
+          "type": "success",
+          "title": "Karamel.id – Yogyakarta, Indonesia",
+          "content": "Frontend Web Development Training",
+          "time": "Jul 22 - Aug 22",
+          "line-type": null
+        },
+        {
+          "type": "success",
+          "title": "LPK IT Komputer – Jakarta, Indonesia",
+          "content": "Photoshop Professional Training",
+          "time": "Dec 18 - Jan 19",
+          "line-type": null
+        },
+        {
+          "type": "success",
+          "title": "Pesantren Media – Bogor, Indonesia",
+          "content": "Photoshop Training Course",
+          "time": "Dec 16 - Dec 16",
+          "line-type": null
+        },
+        {
+          "type": "success",
+          "title": "Pondok Pesantren Panatagama – Yogyakarta, Indonesia",
+          "content": "Junior High School (SMP) - Senior High School (SMA)",
+          "time": "Jul 14 - Aug 20",
+          "line-type": null
+        }
+      ]
+    }
+  ]
+}

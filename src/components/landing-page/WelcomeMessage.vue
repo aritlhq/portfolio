@@ -3,7 +3,7 @@ import personalData from "../../assets/data/personal-data.json"
 import DownloadOutline from "../../assets/icones/DownloadOutline.vue";
 import SocialBadges from "./SocialBadges.vue";
 import ArrowUpRight from "../../assets/icones/ArrowUpRight.vue";
-import Avatar from "./Avatar.vue";
+import AvatarSmall from "./AvatarSmall.vue";
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import Avatar from "./Avatar.vue";
   >
     <div>
       <div class="flex items-center gap-4">
-        <Avatar/>
+        <AvatarSmall/>
         <p class="text-lg">{{ personal.welcome }}</p>
       </div>
       <h1 class="text-3xl lg:text-5xl font-bold mt-2">{{ personal.name }}</h1>

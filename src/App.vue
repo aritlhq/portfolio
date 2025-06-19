@@ -8,7 +8,9 @@ import AppLayout from "./layouts/AppLayout.vue";
     <NGlobalStyle/>
     <div class="font-popp">
       <AppLayout>
-        <RouterView/>
+        <NModalProvider>
+          <RouterView/>
+        </NModalProvider>
       </AppLayout>
     </div>
   </NConfigProvider>

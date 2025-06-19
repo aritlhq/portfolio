@@ -6,7 +6,7 @@ import Certificates from "../components/landing-page/Certificates.vue";
 </script>
 
 <template>
-  <div class="py-8 lg:py-15">
+  <div>
     <!--Welcome Message-->
     <WelcomeMessage/>
 

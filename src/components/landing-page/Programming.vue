@@ -16,7 +16,7 @@ import skillData from "../../assets/data/programming-data.json"
           v-for="sub in category.data"
           :key="sub.subtitle"
       >
-        <p class="mb-1 text-md lg:text-xl">{{ sub.subtitle }}</p>
+        <p class="mb-1 text-md lg:text-lg">{{ sub.subtitle }}</p>
 
         <!--Items-->
         <NScrollbar x-scrollable>

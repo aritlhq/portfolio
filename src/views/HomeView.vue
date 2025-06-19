@@ -6,7 +6,7 @@ import Certificates from "../components/landing-page/Certificates.vue";
 </script>
 
 <template>
-  <div class="py-15">
+  <div class="py-8 lg:py-15">
     <!--Welcome Message-->
     <WelcomeMessage/>
 
@@ -18,5 +18,6 @@ import Certificates from "../components/landing-page/Certificates.vue";
 
     <!--Educations-->
     <Certificates/>
+
   </div>
 </template>

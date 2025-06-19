@@ -47,7 +47,9 @@ const navItems = [
             class="text-white no-underline"
         >
           <NButton text class="text-md lg:text-xl">
-            {{ item.label }}
+            <p class="text-white">
+              {{ item.label }}
+            </p>
           </NButton>
         </RouterLink>
       </div>

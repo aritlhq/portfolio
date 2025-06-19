@@ -1,7 +1,18 @@
 <script setup>
+import {ref} from 'vue'
 import certificateData from "../../assets/data/certificate-data.json"
 import FileCertificate from "../../assets/icones/FileCertificate.vue";
+import CloseRound from "../../assets/icones/CloseRound.vue";
+
+const showModal = ref(false)
+const selectedDetail = ref(null)
+
+function openModal(detail) {
+  selectedDetail.value = detail
+  showModal.value = true
+}
 </script>
+
 
 <template>
   <div
@@ -28,25 +39,52 @@ import FileCertificate from "../../assets/icones/FileCertificate.vue";
 
           <div class="flex flex-col justify-between h-full">
             <p>{{ detail.obtained }}</p>
-            <div>
-              <a :href="detail.proof" class="text-white hover:text-white">
-                <NButton
-                    class="mt-4 w-fit"
-                    dashed
-                    type="primary"
-                >
-                  <div class="flex items-center gap-2">
-                    <span class="text-white font-bold">View Proof</span>
-                    <NIcon class="text-white pb-[0.30rem]">
+            <div class="flex justify-between items-center gap-2 mt-2">
+              <a :href="detail.proof" class="text-emerald no-underline">
+                <NButton dashed color="#f3ecd5">
+                  <div class="flex gap-2 items-center">
+                    <p class="text-white font-semibold">View Proof</p>
+                    <NIcon class="mb-2 text-white">
                       <FileCertificate class="text-lg"/>
                     </NIcon>
                   </div>
                 </NButton>
               </a>
+
+              <NButton @click="openModal(detail)" color="#f3ecd5" class="font-semibold">
+                Details
+              </NButton>
             </div>
           </div>
         </NCard>
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <NModal v-model:show="showModal" transform-origin="center">
+    <NCard
+        :title="selectedDetail?.title"
+        :bordered="false"
+        size="huge"
+        role="dialog"
+        aria-modal="true"
+        :style="{
+    '--n-color-modal': '#18181c',
+    '--n-text-color': 'white'
+  }"
+    >
+      <template #header-extra>
+        <NIcon @click="showModal = false">
+          <CloseRound class="text-xl"/>
+        </NIcon>
+      </template>
+
+      <div v-if="selectedDetail">
+        <p class="mb-4">{{ selectedDetail.description }}</p>
+      </div>
+
+    </NCard>
+  </NModal>
+
 </template>

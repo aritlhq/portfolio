@@ -32,7 +32,7 @@ function openModal(detail) {
           <template #cover>
             <NImage
                 lazy
-                class="h-50 w-full"
+                class="h-38 w-full"
                 object-fit="cover"
                 :src="detail.image"
             />
@@ -70,6 +70,7 @@ function openModal(detail) {
         size="huge"
         role="dialog"
         aria-modal="true"
+        class="w-[500px]"
         :style="{
     '--n-color-modal': '#18181c',
     '--n-text-color': 'white'

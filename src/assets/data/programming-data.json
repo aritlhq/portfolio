@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "Programming",
+      "data": [
+        {
+          "subtitle": "Languages",
+          "items": [
+            "JavaScript",
+            "Solidity"
+          ]
+        },
+        {
+          "subtitle": "Tech Used",
+          "items": [
+            "VueJS",
+            "NuxtJS",
+            "Express",
+            "MySQL",
+            "Swagger",
+            "NodeJS",
+            "TailwindCSS",
+            "UnoCSS",
+            "Hardhat",
+            "Wagmi",
+            "GraphQL",
+            "Prisma",
+            "Jest",
+            "Joi",
+            "and more ..."
+          ]
+        }
+      ]
+    }
+  ]
+}

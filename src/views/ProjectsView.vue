@@ -1,12 +1,10 @@
 <script setup>
-import {useRoute} from "vue-router";
+import Project from "../components/projects/Project.vue";
 
-const route = useRoute();
-const fullUrl = window.location.origin + route.fullPath;
 </script>
 
 <template>
   <div>
-    <p>Current URL: {{ fullUrl }}</p>
+    <Project/>
   </div>
 </template>

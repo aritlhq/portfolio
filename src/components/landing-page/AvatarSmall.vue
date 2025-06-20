@@ -15,7 +15,7 @@
 <style>
   /* Badge size & color */
 .custom-badge.n-badge--dot .n-badge-sup {
-  background-color: #09f76a !important;
+  background-color: #075B5E !important;
   width: 10px !important;
   height: 10px !important;
   min-width: 10px !important;
@@ -26,7 +26,7 @@
 
 @keyframes custom-badge-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(9, 247, 106, 0.6);
+    box-shadow: 0 0 0 0 rgb(7, 120, 124);
   }
   100% {
     box-shadow: 0 0 0 6px rgba(9, 247, 106, 0);

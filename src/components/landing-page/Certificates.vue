@@ -53,7 +53,7 @@ function openModal(detail) {
               </a>
 
               <NButton @click="openModal(detail)" color="#f3ecd5" class="font-semibold text-md md:text-lg">
-                Details
+                See Details
               </NButton>
             </div>
           </div>
